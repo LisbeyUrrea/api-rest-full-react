@@ -7,8 +7,8 @@ const User = ({ firstName, lastName, age, setFirstName, setLastName, setAge, han
         <div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group as={Row} controlId="formBasicName">
-                    <Form.Label column sm="2">First name</Form.Label>
-                    <Col sm="10">
+                    <Form.Label column sm="3">First name</Form.Label>
+                    <Col sm="9">
                         <Form.Control
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
@@ -19,8 +19,8 @@ const User = ({ firstName, lastName, age, setFirstName, setLastName, setAge, han
                 </Form.Group>
 
                 <Form.Group as={Row} controlId="formBasicLastName">
-                    <Form.Label column sm="2">Last Name</Form.Label>
-                    <Col sm="10">
+                    <Form.Label column sm="3">Last Name</Form.Label>
+                    <Col sm="9">
                         <Form.Control
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
@@ -29,8 +29,8 @@ const User = ({ firstName, lastName, age, setFirstName, setLastName, setAge, han
                 </Form.Group>
 
                 <Form.Group as={Row} controlId="formBasicAge">
-                    <Form.Label column sm="2">Age</Form.Label>
-                    <Col sm="10">
+                    <Form.Label column sm="3">Age</Form.Label>
+                    <Col sm="9">
                         <Form.Control
                             value={age}
                             onChange={(e) => setAge(e.target.value)}
